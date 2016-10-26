@@ -1,0 +1,34 @@
+<head>
+  <title>callServerMethod - Chamando médotos do servidor</title>
+</head>
+
+<body>
+  <h1>Invocando chamadas do servidor!</h1>
+
+  {{> simpleMethod}}
+  {{> paramMethod}}
+  {{> returnMethod}}
+</body>
+
+<template name="simpleMethod">
+  <h2>Chamada de método simples.</h2>
+  <button>Clique aqui!</button>
+  <p>Confira o console para ver o resultado.</p>
+</template>
+
+<template name="paramMethod">
+  <h2>Chamada de método com passagem de parâmetro.</h2>
+  <input type='text' id='valor' name='valor' placeholder='Informe um valor para ser enviado ao server'>
+  <button>Clique aqui!</button>
+  <p>Confira o console para ver o resultado.</p>
+</template>
+
+<template name="returnMethod">
+  <h2>Chamada de método com tratamento de retorno do lado do cliente.</h2>
+  <input type='text' id='numero' name='numero' placeholder='Informe um número'>
+  <button>Clique aqui!</button>
+  <p>Confira abaixo o resultado.</p>
+  <div id="resultado" name="resultado">Teste</div>
+</template>
+
+
